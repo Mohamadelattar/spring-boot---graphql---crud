@@ -3,12 +3,13 @@ package com.graphql.crud.service;
 import com.graphql.crud.model.Coffee;
 import com.graphql.crud.model.Size;
 import jakarta.annotation.PostConstruct;
+import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 import java.util.concurrent.atomic.AtomicInteger;
-
+@Service
 public class CoffeeService {
 
     private final List<Coffee> coffees = new ArrayList<>();
